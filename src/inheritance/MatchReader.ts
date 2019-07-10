@@ -16,4 +16,5 @@ export class MatchReader extends CsvFileReader<MatchData> {
       row[6]
     ];
   }
+
 }

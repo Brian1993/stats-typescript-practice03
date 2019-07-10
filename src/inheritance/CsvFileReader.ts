@@ -2,7 +2,7 @@ import fs from 'fs';
 
 export abstract class CsvFileReader<T> {
   data: T[]  = [];
-  constructor(public fileName: string) { }
+  constructor(public fileName: string) {}
   abstract mapRow(row: string[]): T
 
   read(): void {
@@ -15,4 +15,3 @@ export abstract class CsvFileReader<T> {
       .map(this.mapRow)
   }
 }
-
